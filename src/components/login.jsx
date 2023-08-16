@@ -10,8 +10,7 @@ export function Login() {
     <select>
       <option>Masculino</option>
       <option>Femenino</option>
-      <option>No binario</option>
-      <option>Otro</option>
+      <option></option>
     </select>
     <label>Edad</label>
     <input></input>

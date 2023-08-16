@@ -1,8 +1,8 @@
 export function Cursos({ name, descrip }) {
   console.log(name, descrip);
   return (
-    <h1>
+    <p>
       {name} - {descrip}
-    </h1>
+    </p>
   );
 }

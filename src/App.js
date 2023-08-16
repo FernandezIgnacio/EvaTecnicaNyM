@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 /* import { Descripcion } from "./components/descripcion.jsx"; */
 import { Categorias } from "./components/categorias";
@@ -11,7 +10,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Titulo name="Capacitaciones en Neuquen"></Titulo>
-
+        <Cursos name="cursos?" descrip="o cusrsos?"></Cursos>
         <Titulo name="Categorias"></Titulo>
         <Categorias title="Programacion"></Categorias>
         <Categorias title="Panaderia"></Categorias>
@@ -20,7 +19,7 @@ function App() {
         <Categorias title="Mecanica automotriz"></Categorias>
         <Categorias title="Reparacon de aires acondicionados"></Categorias>
         <Boton name="incribirse a todos los cursos"></Boton>
-        <Cursos></Cursos>
+        <Cursos name="cursos?" descrip="o cusrsos?"></Cursos>
       </header>
     </div>
   );

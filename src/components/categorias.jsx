@@ -6,5 +6,5 @@ Categorias.propTypes = {
 export function Categorias({ title }) {
   console.log(title);
 
-  return <h1>{title}</h1>;
+  return <h3>{title}</h3>;
 }
