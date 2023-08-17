@@ -5,6 +5,5 @@ Titulo.propTypes = {
 };
 
 export function Titulo({ name }) {
-  console.log(name);
   return <h1>{name}</h1>;
 }

@@ -3,8 +3,20 @@ import PropTypes from "prop-types";
 Categorias.propTypes = {
   title: PropTypes.string,
 };
-export function Categorias({ title }) {
-  console.log(title);
 
-  return <h3>{title}</h3>;
+const cat = [
+  {
+    id: 1,
+    nombreCat: "Informatica",
+  },
+  {
+    id: 2,
+    nombreCat: "Cocina",
+  },
+];
+
+export function Categorias() {
+  cat.map((cat, i) => {
+    return <option key={i}>{cat.nombreCat}</option>;
+  });
 }
