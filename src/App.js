@@ -8,6 +8,9 @@ import { Titulo } from "./components/titulo";
 function App() {
   return (
     <div className="App">
+     
+
+       
       <header className="App-header">
         <Titulo name="Capacitaciones en Neuquen"></Titulo>
         <Cursos name="cursos?" descrip="o cusrsos?"></Cursos>
