@@ -44,7 +44,7 @@ como se importa bootstrap      import { Button } from 'react-bootstrap';
     value={edad} 
     onChange={ evento => SetEdad (evento.target.value)}></input>
 
-    <button onClick={algo} >Registrate!</button>
+    <button onClick={algo aaaa} >Registrate!</button>
 
    </form>)
     
