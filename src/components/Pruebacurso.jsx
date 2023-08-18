@@ -1,8 +1,8 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
-function Cursos({ title, name, descrip }) {
-  console.log(title, name, descrip);
+function With({ title, name, descrip, boton }) {
+  console.log(title, name, descrip, boton);
   return (
     <Card>
     <Card.Header>{title}</Card.Header>
@@ -11,9 +11,9 @@ function Cursos({ title, name, descrip }) {
         <Card.Text>
          {descrip}
         </Card.Text>
-        <Button variant="primary"></Button>
+        <Button variant="primary">{boton}</Button>
       </Card.Body>
     </Card>
   );
 }
-export default Cursos;
+export default With;

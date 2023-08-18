@@ -3,6 +3,9 @@ import "./App.css";
 /* import { Descripcion } from "./components/descripcion.jsx"; */
 /* import { Categorias } from "./components/categorias"; */
 import { Titulo } from "./components/titulo";
+import x from './components/Pruebacurso.js'
+import With from "./components/Pruebacurso.jsx";
+
 const cat = [
   {
     idCategoria: "1",
@@ -50,8 +53,8 @@ function App() {
             );
           })}
         </select>
-        {CatSelect === "Informatica" && <h4>Introduccion a la Programacion</h4>}
-        {CatSelect === "Cocina" && <h4>Panaderia</h4>}
+        {CatSelect === "Informatica" && <With title="Informtatica" name="Programacion" descrip="capacitacion para logica de porgramacion, condicionales, repetitivas y programacion orientada a objetos (POO)" boton="inscribirse"/>}
+        {CatSelect === "Cocina" &&  <With title="Panaderia" name="PANADERIA neuquen" descrip="curso sobre panaderia, se trata de conseguir mas panaderos para neuquen en capital no hay mucho" boton="inscribirse"/> }
       </header>
     </div>
   );

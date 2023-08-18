@@ -15,6 +15,7 @@ user.length>0
 ?<formulario setUser=(setUser)/>
 :<app/>
 como se importa bootstrap      import { Button } from 'react-bootstrap';
+
 */
 
   const [nombre, SetNombre] = useState("")
