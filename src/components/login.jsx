@@ -14,7 +14,7 @@ export function Login() {
 user.length>0
 ?<formulario setUser=(setUser)/>
 :<app/>
-
+como se importa bootstrap      import { Button } from 'react-bootstrap';
 */
 
   const [nombre, SetNombre] = useState("")
@@ -44,7 +44,7 @@ user.length>0
     value={edad} 
     onChange={ evento => SetEdad (evento.target.value)}></input>
 
-    <button>Registrate!</button>
+    <button onClick={algo} >Registrate!</button>
 
    </form>)
     
