@@ -3,7 +3,6 @@ import "./App.css";
 /* import { Descripcion } from "./components/descripcion.jsx"; */
 /* import { Categorias } from "./components/categorias"; */
 import { Titulo } from "./components/titulo";
-import x from './components/Pruebacurso.js'
 import With from "./components/Pruebacurso.jsx";
 
 const cat = [
