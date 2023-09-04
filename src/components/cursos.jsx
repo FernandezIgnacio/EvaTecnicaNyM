@@ -1,7 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import x from './inscripto.js'
+import {buttin} from './inscripto.js'
 function With({ title, name, descrip, boton }) {
   console.log(title, name, descrip, boton);
   return (

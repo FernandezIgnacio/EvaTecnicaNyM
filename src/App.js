@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import "./App.css";
-/* import { Descripcion } from "./components/descripcion.jsx"; */
-/* import { Categorias } from "./components/categorias"; */
 import { Titulo } from "./components/titulo";     
 import With from "./components/Pruebacurso.jsx";
+import {Boton} from './components/button.jsx'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {Carrusel} from './components/carrusel'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './components/styles/style.css'
 
 const cat = [
   {
@@ -47,21 +51,18 @@ const Cursos = [
     idCategoria: "1",
   },
 ];
-
 function App() {
+ 
   const [CatSelect, setCatSelect] = useState("");
-
   const displayCursos = (event) => {
     console.log(event.target.value);
     setCatSelect(event.target.value);
   };
-  return (
+  return (   
     <div className="App">
- 
-      <header className="App-header">
-        <Titulo name="Capacitaciones en Neuquen"></Titulo>
-        <Titulo name="Categorias"></Titulo>
-        
+        <header className="App-header">
+        <Carrusel></Carrusel>
+        <Titulo  classsName="primertitulo"  name="Capacitaciones en Neuquen"></Titulo>
         <select onChange={(event) => displayCursos(event)}>
           <option>-</option>
           {cat.map((cat, i) => {
@@ -82,6 +83,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
-
