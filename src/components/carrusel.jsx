@@ -25,7 +25,7 @@ export const Carrusel = () => {
   </div>
 </div>
 <div class="carousel-item">
-  <img src="https://www.diarioneuquen.com.ar/wp-content/uploads/2019/04/neuquen-ciudad-960x640.jpeghttp://cdn.wallpapersafari.com/75/32/9YyJ8E.jpg" class="d-block w-100" alt="..." />
+  <img src="https://www.diarioneuquen.com.ar/wp-content/uploads/2019/04/neuquen-ciudad-960x640.jpeghttp://cdn.wallpapersafari.com/75/32/9YyJ8E.jpg  " class="d-block w-100" alt="..." />
   <div class="carousel-caption d-none d-md-block">
     <h5>Third slide label</h5>
     <p>Some representative placeholder content for the third slide.</p>
