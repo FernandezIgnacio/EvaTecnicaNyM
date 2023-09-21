@@ -1,7 +1,28 @@
-import React, { useState } from "react";
+/* import React, { useState } from "react"; */
 import "./App.css";
-/* import { Descripcion } from "./components/descripcion.jsx"; */
-/* import { Categorias } from "./components/categorias"; */
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import ShowCurso from "./components/api/ShowCurso";
+import CreateCursos from "./components/api/CreateCurso";
+import EditCursos from "./components/api/EditCurso";
+
+function App() {
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<ShowCurso />} />
+          <Route path="/create" element={<CreateCursos />} />
+          <Route path="/edit/:id" element={<EditCursos />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
+}
+export default App;
+
+/* import { Descripcion } from "./components/descripcion.jsx";
+import { Categorias } from "./components/categorias";
 import { Titulo } from "./components/titulo";
 const cat = [
   {
@@ -55,6 +76,4 @@ function App() {
       </header>
     </div>
   );
-}
-
-export default App;
+} */
