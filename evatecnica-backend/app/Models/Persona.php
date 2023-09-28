@@ -13,4 +13,8 @@ class Persona extends Model
     public function Cursos(){
         return $this-> belongsToMany(Curso::class, 'curso:persona');
     }
+
+    public function persona(){
+        return $this->hasOne(Persona::class);
+    }
 }

@@ -14,13 +14,20 @@ return new class extends Migration
         Schema::create("curso_persona", function (Blueprint $table) {
             $table->id();
 
-            $table->foreignId('persona_id')
-                  ->constrained('Persona')
-                  ->cascadeOnUpdate();
+            $table->unsignedBigInteger('curso_id');
+            $table->unsignedBigInteger('persona_id');
 
-            $table->foreignId('curso_id')
-                  ->constrained('Curso')
-                  ->cascadeOnUpdate();
+            $table->foreign('curso_id')
+                  ->references('id')
+                  ->on('cursos')
+                  ->OnUpdate('cascade')
+                  ->OnDelete('cascade');
+            $table->foreign('persona_id')
+                  ->references('id')
+                  ->on('personas')
+                  ->OnUpdate('cascade')
+                  ->OnDelete('cascade');
+
         });
     }
 
