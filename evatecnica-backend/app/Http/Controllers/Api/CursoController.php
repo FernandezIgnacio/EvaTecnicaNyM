@@ -17,10 +17,10 @@ class CursoController extends Controller
 
     public function store(Request $request)
     {
-        $category = Categoria::findOrFail($request -> categoria_id);
         $Curso = new Curso();
         $Curso -> nombre = $request -> nombre;
         $Curso -> descripcion = $request -> descripcion;
+        $Curso -> nombre_categoria = $request -> nombre_categoria;
 
         $Curso->save();
     }

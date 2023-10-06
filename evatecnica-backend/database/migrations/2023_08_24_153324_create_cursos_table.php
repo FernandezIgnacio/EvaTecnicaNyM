@@ -16,8 +16,14 @@ return new class extends Migration
             $table->string('nombre');
             $table->string('descripcion');
             $table->engine = 'InnoDB';
-            $table->foreignId('id_categoria')
-                  ->constrained('categorias');
+
+            $table->string('nombre_categoria');
+
+            $table->foreign('nombre_categoria')
+                ->references('nombre')
+                ->on('categorias')
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
             $table->timestamps();
         });
     }

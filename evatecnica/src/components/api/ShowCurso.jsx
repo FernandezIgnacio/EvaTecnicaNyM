@@ -37,6 +37,7 @@ const ShowCurso = () => {
           <tr>
             <th>Nombre</th>
             <th>Descripcion</th>
+            <th>Categoria</th>
             <th>Acciones</th>
           </tr>
         </thead>
@@ -45,6 +46,7 @@ const ShowCurso = () => {
             <tr key={curso.id}>
               <td> {curso.nombre}</td>
               <td> {curso.descripcion}</td>
+              <td> {curso.nombre_categoria} </td>
               <td>
                 <Link to={`/edit/${curso.id}`} className="btn btn-warning">
                   Editar

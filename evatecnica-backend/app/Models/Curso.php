@@ -10,11 +10,12 @@ class Curso extends Model
     use HasFactory;
     protected $fillable = [
                             'nombre',
-                            'descripcion'
+                            'descripcion',
+                            'nombre_categoria'
                           ];
 
     public function categorias(){
-        return $this -> belongsTo(Categoria::class);
+        return $this -> belongsTo(Categoria::class, 'nombre_categoria');
     }
 
     public function Personas(){
