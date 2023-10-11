@@ -23,10 +23,13 @@ const ShowCategoria = () => {
 
   return (
     <div>
-      <div className="d-grid gap-2">
+      <div className="gap-2">
+        <Link to="/" className="btn btn-info btn-lg btn-block">
+          Home
+        </Link>
         <Link
           to="/createCategoria"
-          className="btn btn-success btn-lg mt-2 mb-2 text-white"
+          className="btn btn-success btn-lg btn-block mt-2 mb-2 text-white"
         >
           Create
         </Link>
